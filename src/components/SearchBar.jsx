@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../App.css'; // Import plain CSS
+import '../App.css'; 
 
 export default function SearchBar({ onSearch, initial = '' }) {
   const [value, setValue] = useState(initial);
@@ -24,3 +24,4 @@ export default function SearchBar({ onSearch, initial = '' }) {
     </form>
   );
 }
+
