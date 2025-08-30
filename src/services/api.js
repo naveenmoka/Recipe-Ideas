@@ -7,7 +7,7 @@ const url = `${BASE}/filter.php?i=${encodeURIComponent(ingredient)}`
 const res = await fetch(url)
 if (!res.ok) throw new Error('Network response was not ok')
 const json = await res.json()
-return json.meals // may be null if none
+return json.meals 
 }
 
 
@@ -17,4 +17,5 @@ const res = await fetch(url)
 if (!res.ok) throw new Error('Network response was not ok')
 const json = await res.json()
 return json.meals ? json.meals[0] : null
+
 }
