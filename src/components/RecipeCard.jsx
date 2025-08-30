@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css'; // Import plain CSS
+import '../App.css'; 
 
 export default function RecipeCard({ meal, onClick }) {
   return (
@@ -18,3 +18,4 @@ export default function RecipeCard({ meal, onClick }) {
     </div>
   );
 }
+
